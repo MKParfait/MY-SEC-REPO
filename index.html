@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NOVA Drive — next-generation sci-fi car rentals." />
+  <title>NOVA Drive | Rent Beyond Tomorrow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="NOVA Drive home"><span class="brand-mark">✦</span> NOVA<span>DRIVE</span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#fleet">Fleet</a><a href="#how-it-works">How it works</a><a href="#missions">Missions</a>
+    </nav>
+    <a class="button button-small button-outline" href="#booking">Book a ride <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse"></span> The future is available now</p>
+        <h1>Rent the<br /><em>impossible.</em></h1>
+        <p class="hero-text">Command the latest electric hypercars, autonomous cruisers, and orbital-ready rides. Your next adventure starts one ignition away.</p>
+        <div class="hero-actions"><a class="button" href="#booking">Explore the fleet <span>→</span></a><a class="text-link" href="#how-it-works">See how it works <span>↓</span></a></div>
+        <div class="hero-stats"><div><strong>42</strong><span>future-ready vehicles</span></div><div><strong>24/7</strong><span>concierge support</span></div><div><strong>∞</strong><span>possibilities</span></div></div>
+      </div>
+      <div class="hero-visual" aria-label="Futuristic silver sports car illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="planet"><span></span></div>
+        <div class="car-glow"></div><div class="car"><div class="car-roof"></div><div class="car-window"></div><div class="car-body"></div><div class="wheel wheel-front"></div><div class="wheel wheel-back"></div><div class="light light-front"></div><div class="light light-back"></div></div>
+        <p class="visual-label">NOVA / X-01<br /><span>CLASS: HYPER GT</span></p>
+      </div>
+    </section>
+
+    <section id="fleet" class="fleet section-wrap">
+      <div class="section-heading"><div><p class="eyebrow">01 / Your next vehicle</p><h2>Choose your <em>reality.</em></h2></div><a class="text-link" href="#booking">View all vehicles <span>↗</span></a></div>
+      <div class="fleet-grid">
+        <article class="vehicle-card featured"><div class="card-top"><span class="tag">Most wanted</span><span class="price">$389 <small>/ day</small></span></div><div class="vehicle-art vehicle-x"><div class="mini-car"></div></div><div class="vehicle-info"><div><h3>X-01 / Hyper GT</h3><p>0–60 in 1.9 seconds · 620 mi range</p></div><button class="icon-button" aria-label="Book X-01">↗</button></div></article>
+        <article class="vehicle-card"><div class="card-top"><span class="tag tag-muted">Autonomous</span><span class="price">$249 <small>/ day</small></span></div><div class="vehicle-art vehicle-a"><div class="mini-car"></div></div><div class="vehicle-info"><div><h3>A-7 / Orbit Cruiser</h3><p>Self-drive · 5 seats · Zero emissions</p></div><button class="icon-button" aria-label="Book A-7">↗</button></div></article>
+        <article class="vehicle-card"><div class="card-top"><span class="tag tag-muted">Off-world</span><span class="price">$579 <small>/ day</small></span></div><div class="vehicle-art vehicle-r"><div class="mini-car"></div></div><div class="vehicle-info"><div><h3>R-9 / Lunar Rover</h3><p>All terrain · Pressurized cabin · 4 seats</p></div><button class="icon-button" aria-label="Book R-9">↗</button></div></article>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="process section-wrap"><p class="eyebrow">02 / Simple by design</p><h2>From dream to <em>drive.</em></h2><div class="steps"><div class="step"><span>01</span><h3>Pick your reality</h3><p>Browse our curated fleet and choose the machine that matches your mission.</p></div><div class="step"><span>02</span><h3>Set your coordinates</h3><p>Tell us where and when. We deliver anywhere in the known city limits.</p></div><div class="step"><span>03</span><h3>Ignite your journey</h3><p>Unlock with your phone, sync your profile, and leave ordinary behind.</p></div></div></section>
+
+    <section id="booking" class="booking section-wrap"><div><p class="eyebrow">03 / Reserve your ride</p><h2>Where will you <em>go?</em></h2><p class="booking-copy">Your future vehicle is standing by. Reserve in under two minutes.</p></div><form id="booking-form"><label>Choose a vehicle<select id="vehicle" required><option value="">Select your ride</option><option>NOVA X-01 / Hyper GT</option><option>A-7 / Orbit Cruiser</option><option>R-9 / Lunar Rover</option></select></label><div class="form-row"><label>Pick-up date<input type="date" id="date" required /></label><label>Days<input type="number" min="1" max="30" value="1" required /></label></div><button class="button" type="submit">Check availability <span>→</span></button><p class="form-message" role="status"></p></form></section>
+  </main>
+  <footer class="site-footer section-wrap"><a class="brand" href="#top"><span class="brand-mark">✦</span> NOVA<span>DRIVE</span></a><p>Built for the boldly curious. © 2088 NOVA Drive.</p><div><a href="#fleet">Fleet</a><a href="#booking">Contact</a><a href="#top">Privacy</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
